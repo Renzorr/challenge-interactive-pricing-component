@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body class="bg-bg-body bg-custom bg-body bg-cover bg-no-repeat">
+    <main class="container">
+      <header
+        class="relative mb-[90px] mt-[102px] text-center tracking-[0.1px]"
+      >
+        <h1 class="mb-[8px] text-lg font-semibold text-black">
+          Simple, traffic-based pricing
+        </h1>
+        <p class="text-gray tracking-[-0.5px]">
+          Sign-up for our 30-day trial. No credit card required.
+        </p>
+        <img
+          src="./images/pattern-circles.svg"
+          alt=""
+          aria-hidden="true"
+          class="mobile:top-[-20%] absolute left-[50%] top-[-47%] translate-x-[-50%]"
+        />
+      </header>
+
+      <section
+        class="shadow-card-shadow mobile:px-[25px] mb-[50px] rounded-lg bg-white pl-[45px] pr-[48px] pt-[38px]"
+      >
+        <header
+          class="grid-cols-header mobile:grid-cols-1 mobile:text-center mb-[27px] grid items-center gap-y-[37px]"
+        >
+          <p class="text-gray text-base uppercase tracking-[2.3px]">
+            <span class="tracking-[2px]" id="pages">100k</span>
+            pageviews
+          </p>
+          <div class="flex items-center justify-center gap-[8px]">
+            <p class="text-xl font-extrabold tracking-[-1px] text-black">
+              $<span id="values">16.00</span>
+            </p>
+            <p class="text-gray">/ <span id="time">month</span></p>
+          </div>
+          <input
+            type="range"
+            class="mobile:col-[1] mobile:row-[2] col-[1/3]"
+            id="range"
+            min="0"
+            max="80"
+            step="20"
+          />
+        </header>
+        <div
+          class="mobile:pr-0 mobile:justify-center mt-[55px] flex items-center justify-end pr-[18px]"
+        >
+          <p class="text-gray mr-[17px] text-xs tracking-[-0.3px]">
+            Monthly Billing
+          </p>
+          <input type="checkbox" id="checkbox" />
+          <p class="text-gray ml-[15px] mr-[11px] text-xs tracking-[-0.3px]">
+            Yearly Billing
+          </p>
+          <span
+            class="text-2xs text-orange bg-pale-orange rounded-full px-[6px] py-[2px]"
+            >25% <span class="mobile:hidden">discount</span></span
+          >
+        </div>
+        <div class="bg-pale-gray mt-[42px] h-[1px] w-full"></div>
+        <div
+          class="mobile:flex-col mobile:gap-[50px] mt-[31px] flex items-center justify-between pb-[30px]"
+        >
+          <ul class="flex flex-col gap-[9px]">
+            <li class="list-image-checklist ml-[19px] text-sm">
+              <span class="text-gray pl-[8px]">Unlimited websites</span>
+            </li>
+            <li class="list-image-checklist ml-[19px] text-sm">
+              <span class="text-gray pl-[8px]">100% data ownership</span>
+            </li>
+            <li class="list-image-checklist ml-[19px] text-sm">
+              <span class="text-gray pl-[8px]">Email reports</span>
+            </li>
+          </ul>
+          <a href="#" class="btn-primary">Start my trial</a>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
